@@ -1,0 +1,481 @@
+/*
+  Usage Rights: You are free to edit, copy, and use this website template for personal or commercial projects. 
+  However, you are not allowed to sell or resell this template in any form.
+
+  Credit and Donations: While not mandatory, I would greatly appreciate it if you could give me credit for the template. 
+  A small mention or link back to my website would be wonderful. 
+  If you find this template useful and would like to support my work, donations are also welcome.
+
+  Contact Information:
+    Name: Genial Ingele
+
+    Website: https://genialingele.github.io/
+
+    Email: genial@ndolena.com
+
+    Thank you for respecting these terms and for your support!
+
+
+*/
+
+/* VARIABLES */
+:root{
+
+    /* BASIC ELEMENTS */
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:400;
+    color: var(--primary-colour-darker);
+
+    cursor: auto;
+    font-size: 14pt;
+
+
+    /* COLOURS VARIABLES */
+
+    --primary-colour: #A2E3C4;
+    --secondary-colour: #BABF95;
+    --tertiary-colour: #261C15;
+
+    --primary-colour-darker: #405c4f;
+    --secondary-colour-darker: #959879;
+    --tertiary-colour-darker: #17110d;
+
+    --tertiary-colour-overlay: rgba(38, 28, 21, 0.5);
+    --tertiary-colour-overlay-light: rgba(38, 28, 21, 0.1);
+
+    --light-colour: #f3fac1;
+    --white-colour: #e2fff4;
+
+    /* FONT VARIABLES */
+    --font-size-s: 12pt;
+    --font-size-m: 16pt;
+    --font-size-l: 24pt;
+    --font-size-xl: 32pt;
+    --font-size-xxl: 60pt;
+
+
+
+    /* SPACING VARIABLES */
+    --negative-spacing-s: -10px;
+    --negative-spacing-m: -20px;
+    --negative-spacing-l: -100px;
+    --no-space: 0px;
+    --one-space: 0px;
+    --spacing-s: 2px;
+    --spacing-m: 5px;
+    --spacing-l: 10px;
+    --spacing-xl: 20px;
+    --spacing-xxl: 60px;
+    --spacing-xxxl: 100px;
+
+    --size-s:20px;
+    --size-m:50px;
+    --size-l:100px;
+    --size-xl:250px;
+    --size-xxl:550px;
+
+    /* DIMENSIONS */
+    --full-height: 100vh;
+    --full-width: 100%;
+
+    --size-img:400px;
+
+    /* BORDERS */
+    --border-primary-s: 2px solid var(--primary-colour);
+    --border-primary-m: 5px solid var(--primary-colour);
+    --border-primary-l: 10px solid var(--primary-colour);
+
+    --border-secondary-s: 2px solid var(--secondary-colour);
+    --border-secondary-m: 5px solid var(--secondary-colour);
+    --border-secondary-l: 10px solid var(--secondary-colour);
+
+
+    --border-radius-s: 2px;
+    --border-radius-m: 5px;
+    --border-radius-l: 10px;
+    --border-radius-xl: var(--size-xl);
+    --border-radius-xxl: var(--size-xxl);
+
+
+    /* MISC. VARIABLES */
+    --no-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    --shadow-s: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+    --shadow-m: 0px 0px 10px 2px rgba(0, 0, 0, 0.75);;
+    --shadow-l: 0px 0px 20px 5px rgba(0, 0, 0, 1);;
+
+    
+
+
+}
+/* BASIC ELEMENTS */
+body{
+    margin: var(--no-space);
+}
+
+a{
+    text-decoration: none;
+
+}
+
+input{
+    padding: var(--spacing-l);
+    font-size: var(--font-size-m);
+    margin-bottom: var(--spacing-l);
+    border: var(--border-secondary-s);
+    border-radius: var(--border-radius-l);
+    color: var(--primary-colour-darker);
+    width: var(--full-width);
+}
+
+textarea{
+    padding: var(--spacing-l);
+    font-size: var(--font-size-m);
+    margin-bottom: var(--spacing-l);
+    border: var(--border-secondary-s);
+    border-radius: var(--border-radius-l);
+    color: var(--primary-colour-darker);
+    min-height: var(--size-xl);
+    width: var(--full-width);
+}
+
+form{
+    padding: var(--spacing-m);
+    min-width: var(--size-xxl);
+    width: var(--full-width);
+}
+
+form button{
+    background-color: var(--primary-colour-darker);
+    color: var(--light-colour);
+    padding: var(--spacing-l);
+    width: var(--full-width);
+}
+
+form button:hover{
+    background-color: var(--secondary-colour);
+
+}
+
+#form{
+    background-color: var(--secondary-colour-darker);
+    margin-bottom: var(--no-space);
+    display: flex;
+    justify-content: space-evenly;
+    align-items:baseline;
+    color: var(--light-colour);
+
+}
+
+
+/* TYPOGRAPHY */
+h1{
+    font-size: var(--font-size-xxl);
+
+}
+
+h2{
+    font-size: var(--font-size-xl);
+    color: var(--primary-colour-darker);
+    
+}
+
+h3{
+    font-size: var(--font-size-m);
+}
+
+
+em{
+    color: var(--white-colour);
+}
+
+/* BUTTONS */
+
+button{
+    background-color: var(--secondary-colour);
+    border: var(--no-space);
+    border-radius: var(--border-radius-l);
+    color: var(--primary-colour-darker);
+    text-align: center;
+    padding: var(--spacing-m);
+    font-size: var(--font-size-s);
+}
+
+button:hover{
+    background-color: var(--primary-colour);
+}
+
+/* CONTAINERS */
+.menu{
+    background-color: transparent;
+    padding: var(--spacing-xl);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: var(--spacing-s);
+    z-index: 1;
+}
+
+.menu a{
+    border-radius: var(--border-radius-m);
+    padding: var(--spacing-l);
+    color: var(--light-colour--secondary-colour);
+    text-transform: uppercase;  
+    font-size: var(--font-size-s);
+    letter-spacing: var(--spacing-s);
+
+}
+
+.menu a:hover{
+    background-color: var(--primary-colour-darker);
+    padding: var(--spacing-l);
+    align-items: center;
+    text-decoration:overline;
+}
+
+.menu a:active{
+    background-color: var(--primary-colour-darker);
+    padding: var(--spacing-l);
+    align-items: center;
+}
+
+.menu a:visited{
+    padding: var(--spacing-xl);
+}
+
+.welcome{
+    position: relative;
+    display: flex; 
+    justify-content:center; 
+    align-items:baseline; 
+
+    padding: var(--spacing-xl);
+    height: var(--size-xxl);
+    text-align: center;
+
+    background-image: url("/img/blur_tomatoes.jpg");
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position: center;
+    color: var(--light-colour);
+    flex-wrap: wrap;
+
+    /*If you want a radius at the bottom of the welcome section */
+    /*border-bottom-right-radius: var(--border-radius-xl);*/
+}
+
+
+
+.welcome h1{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    
+}
+
+.welcome h3{
+    color: var(--light-colour);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: var(--font-size-l);
+}
+
+.welcome p{
+    letter-spacing: var(--spacing-l);
+    color: var(--primary-colour);
+}
+.welcome button{
+    background-color: var(--primary-colour);
+    border-radius: var(--border-radius-m);
+    color: var(--primary-colour-darker);
+    padding: var(--spacing-xl);
+    font-size: var(--font-size-s);
+    letter-spacing: var(--spacing-s);
+    text-transform: uppercase;
+    margin-bottom: var(--spacing-s);
+}
+.welcome button:hover{
+    background-color: var(--secondary-colour);
+    border-radius: var(--border-radius-l);
+    color: var(--primary-colour-darker);
+    font-size: var(--font-size-s);
+    box-shadow: var(--shadow-m);
+}
+
+.overlay{
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--tertiary-colour-overlay);
+}
+
+.content{
+   position: relative;
+   z-index: 1;
+   width: 100%;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+}
+
+
+.fullColumn{
+    background-color: var(--secondary-colour);
+    padding: var(--spacing-xxl);
+}
+
+.fullColumn button{
+    background-color: var(--primary-colour);
+    width: var(--size-xl);
+    padding: var(--spacing-l);
+}
+
+.fullColumn button:hover{
+    background-color: var(--secondary-colour-darker);
+}
+
+.twoColumnsA{
+    display: flex;
+    padding: var(--spacing-xxl);
+    gap: var(--spacing-xl);
+    align-items: center;
+    margin-bottom: var(--spacing-xxxl);
+}
+
+.twoColumnsA img{
+    width: 100%;
+    /* For bigger screens */
+    /* transform: translate(0%, -10%); */
+
+}
+#companies{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--primary-colour) ;
+    background-image: linear-gradient(-45deg, var(--light-colour), var(--secondary-colour));
+    margin-bottom: var(--spacing-xxl);
+    padding-bottom: var(--spacing-xxl);
+}
+
+.twoColumnsB{
+    display: flex;
+    padding: var(--spacing-xxl);
+    gap: var(--spacing-xl);
+
+    margin-bottom: var(--spacing-xxxl);
+}
+
+.threeColumnsA{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-l);
+    padding: var(--spacing-xl);
+
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--secondary-colour);
+}
+.croppedGallery{
+    overflow: hidden;
+    width: var(--size-xxl);
+    flex-grow: 1;
+
+}
+.croppedGallery:active{
+    padding: var(--spacing-l);
+}
+
+.companies{
+    display: flex;
+    gap: var(--spacing-l);
+}
+
+
+#servicesFullColumn{
+    background-color: var(--secondary-colour);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top-left-radius: var(--border-radius-xl);
+}
+
+#ourValuesFullColumn{
+    background-color: white;
+
+}
+
+.cropped{
+    overflow: hidden;
+    height: var(--size-img);
+    border-radius: var(--border-radius-l);
+    box-shadow: var(--shadow-s);
+}
+
+.footer{
+    background-color: var(--primary-colour-darker);
+    color: var(--light-colour);
+    padding: var(--spacing-xl);
+
+}
+
+.cardA{
+    margin-top: var(--negative-spacing-l);
+    background-color: var(--light-colour);
+    width: var(--size-xl);
+    display: flex;
+    flex-direction: column;
+    border-radius: var(--border-radius-l);
+    margin-inline: var(--spacing-xl);
+    padding:var(--spacing-l);
+    align-items: center;
+}
+
+.cardA:hover{
+    background-color: var(--primary-colour);
+    
+
+}
+
+.cardB{
+
+    background-color: var(--light-colour);
+    background-image: radial-gradient(circle, var(--light-colour) 40%, var(--secondary-colour));
+    display: flex;
+    flex-direction: column;
+    border-radius: var(--border-radius-l);
+    margin-inline: var(--spacing-xl);
+    padding:var(--spacing-l);
+    align-items: center; 
+}
+
+.icon{
+    border-radius: var(--border-radius-xxl);
+    height: var(--size-l);
+    width: var(--size-l);
+    overflow: hidden;
+    margin-top: var(--negative-spacing-m);
+    padding-bottom: var(--spacing-m);
+}
+
+.person{
+    border-radius: var(--border-radius-xxl);
+    height: var(--size-l);
+    width: var(--size-l);
+    overflow: hidden;
+    margin-top: var(--negative-spacing-m);
+
+}
+
+/* ANIMATION */
+
+
+/* MEDIA QUERIES */
+@media screen {
+    
+}
