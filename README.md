@@ -1,10 +1,11 @@
 <h1>Hi there</h1>
 
 <p>Here is a free HTML, clean design template you can use for your business</p>
+<p>The initial data is for a farm, you can transfrom it to whatever you like.</p>
 
-<p>The initial data is for a farm, you can transfrom it to whatever you like</p>
-
-
+<img src="screenshots\website_screenshot2.png"/>
+<img src="screenshots\website_screenshot1.png"/>
+<img src="screenshots\website_screenshot3.png"/>
 <hr>
 
 <h2>Just a few things</h2>
