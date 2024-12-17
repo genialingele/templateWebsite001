@@ -1,0 +1,13 @@
+# Ignore database configuration file
+
+
+# Ignore SQL files
+*.sql
+
+# Ignore JSON files
+*.json
+
+# Ignore VSCode settings
+.vscode/
+
+# Ignore htaccess file
