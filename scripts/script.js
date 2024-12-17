@@ -15,3 +15,5 @@
 
     Thank you for respecting these terms and for your support!
 */
+
+const animation = document.createElement("div");
