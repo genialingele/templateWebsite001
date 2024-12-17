@@ -252,7 +252,7 @@ button:hover{
     height: var(--size-xxl);
     text-align: center;
 
-    background-image: url("img/blur_tomatoes.jpg");
+    background-image: url("../img/blur_tomatoes.jpg");
     background-size:cover;
     background-repeat:no-repeat;
     background-position: center;
