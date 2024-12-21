@@ -78,6 +78,8 @@
     --size-xl: 250px;
     --size-xxl: 550px;
 
+    --form-input-height: 35px;
+
     /* DIMENSIONS */
     --full-height: 100vh;
     --full-width: 100%;
@@ -145,53 +147,6 @@ a:visited {
     text-decoration: none;
 }
 
-input {
-    padding: var(--spacing-l);
-    font-size: var(--font-size-m);
-    margin-bottom: var(--spacing-l);
-    border: var(--border-secondary-s);
-    border-radius: var(--border-radius-l);
-    color: var(--primary-colour-darker);
-    width: var(--full-width);
-}
-
-textarea {
-    padding: var(--spacing-l);
-    font-size: var(--font-size-m);
-    margin-bottom: var(--spacing-l);
-    border: var(--border-secondary-s);
-    border-radius: var(--border-radius-l);
-    color: var(--primary-colour-darker);
-    min-height: var(--size-xl);
-    width: var(--full-width);
-}
-
-form {
-    padding: var(--spacing-m);
-    min-width: var(--size-xxl);
-    width: var(--full-width);
-}
-
-form button {
-    background-color: var(--primary-colour-darker);
-    color: var(--light-colour);
-    padding: var(--spacing-l);
-    width: var(--full-width);
-}
-
-form button:hover {
-    background-color: var(--secondary-colour);
-
-}
-
-#contact {
-    background-color: var(--light-colour);
-    margin-bottom: var(--no-space);
-    display: flex;
-    justify-content: space-evenly;
-    align-items: baseline;
-}
-
 
 /* TYPOGRAPHY */
 h1 {
@@ -228,6 +183,15 @@ button {
 
 button:hover {
     background-color: var(--primary-colour);
+}
+
+button[type="submit"] {
+    background-color: var(--primary-colour-darker);
+    color:var(--light-colour);
+    padding: var(--spacing-l);
+    font-size: var(--font-size-s);
+    width: var(--size-l);
+    
 }
 
 /* CONTAINERS */
@@ -291,7 +255,7 @@ button:hover {
 
 
 
-.welcome h1 {
+h1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
 
 }
@@ -354,7 +318,7 @@ button:hover {
 
 .fullColumn button {
     background-color: var(--primary-colour);
-    width: var(--size-xl);
+    width: var(--size-m);
     padding: var(--spacing-l);
 }
 
@@ -367,13 +331,15 @@ button:hover {
     padding: var(--spacing-xxl);
     gap: var(--spacing-xl);
     align-items: center;
-    margin-bottom: var(--spacing-xxxl);
+    margin-bottom: var(--spacing-xxl);
+
 }
 
 .twoColumnsA img {
     width: 100%;
+    
     /* For bigger screens */
-    /* transform: translate(0%, -10%); */
+     transform: translate(0%, 0%); 
 
 }
 
@@ -392,8 +358,51 @@ button:hover {
     display: flex;
     padding: var(--spacing-xxl);
     gap: var(--spacing-xl);
+}
 
-    margin-bottom: var(--spacing-xxxl);
+.twoColumnsB#contact {
+    background-color: var(--light-colour);
+    display: flex;
+    flex-direction: row;
+    gap: var(--spacing-xl);
+    justify-content: space-around;
+
+}
+
+form {
+    width: var(--size-xxl);
+
+}
+
+input {
+    width: var(--full-width);
+    height: var(--form-input-height);
+    border-radius: var(--border-radius-l);
+    padding: var(--spacing-l);
+    font-size: var(--font-size-m);
+    margin-bottom: var(--spacing-l);
+    border: var(--no-space);
+
+}
+
+input:focus,
+textarea:focus {
+    box-shadow: var(--shadow-m);
+}
+
+textarea {
+    width: var(--full-width);
+    height: var(--size-l);
+    border-radius: var(--border-radius-l);
+    padding: var(--spacing-l);
+    font-size: var(--font-size-m);
+    margin-bottom: var(--spacing-l);
+    border: var(--no-space);
+}
+
+label {
+    font-size: var(--font-size-s);
+    font-weight: 600;
 }
 
 .threeColumnsA {
@@ -495,7 +504,7 @@ button:hover {
     overflow: hidden;
     margin-top: var(--negative-spacing-m);
     padding: var(--spacing-m);
-    padding-bottom: var(--spacing-m);  
+    padding-bottom: var(--spacing-m);
 }
 
 
@@ -529,23 +538,23 @@ button:hover {
         display: flex;
         gap: var(--spacing-s);
         flex-wrap: wrap;
+        margin-bottom: var(--spacing-s);
     }
 
     .menu a {
         background-color: var(--primary-colour-darker);
         border-radius: var(--border-radius-m);
-        margin-bottom: var(--spacing-l);
+        padding: var(--spacing-m);
+
     }
 
 
     .welcome {
-
-        padding: var(--spacing-m);
+        padding: var(--spacing-s);
         height: fit-content;
         padding-bottom: var(--spacing-xl);
         display: flex;
         flex-direction: column;
-
     }
 
     .twoColumnsA {
@@ -554,7 +563,6 @@ button:hover {
         padding: var(--spacing-l);
         gap: var(--spacing-xl);
         align-items: center;
-        border: var(--border-primary-l);
         margin-bottom: var(--spacing-xxxl);
     }
 
@@ -566,6 +574,7 @@ button:hover {
         padding: var(--one-space);
         flex-wrap: wrap;
     }
+
     .cardA {
         line-height: var(--line-height-s);
         margin-top: var(--no-space);
@@ -579,13 +588,13 @@ button:hover {
         align-items: center;
     }
 
-    .companies{
+    .companies {
         display: flex;
         gap: var(--spacing-l);
         flex-wrap: wrap;
         justify-content: center;
     }
-    
+
 
     #companies {
         display: flex;
@@ -594,13 +603,13 @@ button:hover {
         flex-direction: column;
         padding: var(--spacing-m);
         background-color: var(--primary-colour);
-        background-image: linear-gradient(45deg, var(--light-colour), var(--white-colour));    
+        background-image: linear-gradient(45deg, var(--light-colour), var(--white-colour));
         margin-bottom: var(--spacing-l);
         padding-bottom: var(--spacing-xxl);
-        width: var(--full-width);
-        
-    }  
-    h2{
+
+    }
+
+    h2 {
         font-size: var(--font-size-l);
         color: var(--primary-colour-darker);
     }
@@ -616,7 +625,7 @@ button:hover {
         overflow: hidden;
         margin-top: var(--negative-spacing-m);
         padding: var(--spacing-m);
-        padding-bottom: var(--spacing-m);  
+        padding-bottom: var(--spacing-m);
     }
 
 
@@ -633,34 +642,57 @@ button:hover {
         padding: var(--spacing-xl);
         gap: var(--spacing-xxl);
         margin-bottom: var(--spacing-xl);
-     
+
     }
 
-    #contact {
+    .twoColumnsB#contact {
         background-color: var(--light-colour);
-        margin-bottom: var(--no-space);
         display: flex;
-        justify-content: space-evenly;
-        align-items: baseline;
-        width: var(--full-width);
         flex-direction: column;
-        overflow: hidden;
+        gap: var(--spacing-m);
+        align-items: start;
+        margin-bottom: var(--no-space);
+        padding-bottom: var(--spacing-xxl);
     }
+
+
+    .fullColumn {
+        background-color: var(--secondary-colour);
+        padding: var(--spacing-xl);
+    }
+
+    form {
+        width: var(--size-xl);
+    }
+
     input {
-        padding: var(--spacing-m);
-        font-size: var(--font-size-s);
-        margin-bottom: var(--spacing-l);
-        border: var(--border-secondary-s);
+        width: var(--full-width);
+        height: var(--form-input-height);
         border-radius: var(--border-radius-l);
-        color: var(--primary-colour-darker);
-        width: var(--size-xl);  
+        padding: var(--spacing-l);
+        font-size: var(--font-size-m);
+        margin-bottom: var(--spacing-l);
+        border: var(--no-space);
+
+    }
+
+    input:focus,
+    textarea:focus {
+        box-shadow: var(--shadow-m);
+    }
+
+    textarea {
+        width: var(--full-width);
+        height: var(--size-l);
+        border-radius: var(--border-radius-l);
+        padding: var(--spacing-l);
+        font-size: var(--font-size-m);
+        margin-bottom: var(--spacing-l);
+        border: var(--no-space);
     }
 
 
 
-    
-
-    
 
 }
 
@@ -669,4 +701,45 @@ button:hover {
     :root {
         font-size: var(--font-size-s);
     }
+
+    .gallery {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        background-color: var(--secondary-colour);
+    }
+
+    .threeColumnsA {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: var(--spacing-m);
+        padding: var(--spacing-l);
+        flex-wrap: nowrap;
+
+    }
+
+    .cardA {
+        line-height: var(--line-height-s);
+        margin-top: var(--no-space);
+        background-color: var(--light-colour);
+        width: var(--size-xl);
+        display: flex;
+        flex-direction: column;
+        border-radius: var(--border-radius-l);
+        margin-inline: var(--no-space);
+        padding: var(--spacing-m);
+        align-items: center;
+    }
+
+    .twoColumnsB#contact {
+        background-color: var(--light-colour);
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        padding-bottom: var(--spacing-xxxl);
+    }
+
+
+
 }
