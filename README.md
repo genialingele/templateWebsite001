@@ -1,6 +1,6 @@
 <h1>Hi there</h1>
 
-<p>Here is a free HTML, clean design, single-page template you can use for your business or even as a landing page.</p>
+<p>Here is an HTML, clean design, single-page template you can use for your business or even as a landing page.</p>
 <p>The initial data is for a farm, you can transfrom it to whatever you like.</p>
 
 <img src="screenshots\website_screenshot2.png"/>
